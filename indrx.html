@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+    // Mamy liste zakupów. Oblicz za pomocą pętli, sumę zakupów. Wrzuć wynik w konsolę
+
+    const shopping = [
+      {
+        id: 1,
+        name: "banan",
+        quantity: 3,
+        price: 3.99
+      },
+      {
+        id: 2,
+        name: "Chleb",
+        quantity: 1,
+        price: 4.99
+      },
+      {
+        id: 3,
+        name: "Wiśnie",
+        quantity: 0.5,
+        price: 19.99
+      }
+    ]
+    const calculateSum = (products) => {
+      // Zadanie nr 1
+      let sum = 0;
+
+      for (let product of products) {
+        sum = sum + product.quantity * product.price;
+      }
+
+      return sum;
+    }
+
+
+  
+    </script>
+</body>
+</html>
